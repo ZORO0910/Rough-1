@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Campus System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Smart Campus Complaint System</h1>
+
+        <div class="form">
+            <input id="regNo" placeholder="Registration No">
+            <input id="name" placeholder="Name">
+            <input id="room" placeholder="Room No">
+            <input id="issue" placeholder="Issue">
+            <button onclick="addComplaint()">Submit Complaint</button>
+        </div>
+
+        <h2>All Complaints</h2>
+        <div id="list"></div>
+    </div>
+
+    <!-- Firebase Compat Libraries (Fixes CORS issue for file:/// opening) -->
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+
+    <!-- Normal JS Script -->
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+
+</html>
